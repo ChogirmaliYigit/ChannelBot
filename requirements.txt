@@ -1,0 +1,3 @@
+aiogram
+environs~=8.0.0
+pandas
