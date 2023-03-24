@@ -46,7 +46,7 @@ async def bot_start(message: types.Message):
     else:
         await bot.send_message(chat_id=ADMINS[0], text=f"Bazaga nomida < belgisi bor odam qo'shildi!")
         if str(user_id) in ADMINS:
-            await message.answer(f"Xush kelibsiz! {name}", reply_markup=markup)
+            await message.answer(f"Xush kelibsiz!", reply_markup=markup)
         else:
             inline_markup = add_group(username=bot_username)
-            await message.answer(f"Xush kelibsiz! {name}\n\nBu botdan faqat guruhlarda foydalanishingiz mumkin.", reply_markup=inline_markup)
+            await message.answer(f"Xush kelibsiz!\n\nBu botdan faqat guruhlarda foydalanishingiz mumkin.", reply_markup=inline_markup)
