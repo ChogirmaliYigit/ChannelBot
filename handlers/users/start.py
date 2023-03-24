@@ -2,6 +2,7 @@ import sqlite3
 from keyboards.inline.markup import add_group
 from aiogram import types
 from aiogram.dispatcher.filters.builtin import CommandStart
+from aiogram.dispatcher import FSMContext
 from keyboards.default.main import markup
 from data.config import ADMINS
 from loader import dp, db, bot
